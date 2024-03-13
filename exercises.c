@@ -23,7 +23,10 @@ Descripción: Escribe una función que tome un arreglo y su tamaño, y luego
 invierta el orden de sus elementos.
 */
 void reverseArray(int arr[], int size) {
-  
+  int temp;
+  for (int i = 0; i < size; i++)
+    temp = arr[size-1];
+    arr[0] = temp;
 }
 
 /*
@@ -51,10 +54,6 @@ void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2, int result[
 
   for(i = 0; i < size2 ; i++)
       result[size1 + i] = arr2[i];
-
-  int min = result[i];
-  if(result[i+1] < min)
-    min = result[i+1];
 }
 
 /*
