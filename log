@@ -62,3 +62,13 @@ exercises.c:29:12: error: ‘temp’ may be used uninitialized in this function 
 cc1: all warnings being treated as errors
 Compilation failed
 e37cfca
+Wed 13 Mar 2024 08:49:17 PM UTC: 
+ exercises.c | 14 +++++++++-----
+ 1 file changed, 9 insertions(+), 5 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:36:7: error: array size missing in ‘arreglo’
+   36 |   int arreglo[];
+      |       ^~~~~~~
+Compilation failed
+7185f59
