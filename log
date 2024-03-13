@@ -136,3 +136,21 @@ exercises.c:47:6: note: declared here
 cc1: all warnings being treated as errors
 Compilation failed
 729b285
+Wed 13 Mar 2024 09:01:28 PM UTC: 
+ exercises.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:36:8: error: unused variable ‘result’ [-Werror=unused-variable]
+   36 |   int *result = (int *)malloc(size * sizeof(int));
+      |        ^~~~~~
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:57:10: error: ‘return’ with a value, in function returning void [-Werror=return-type]
+   57 |   return nuevo;  }
+      |          ^~~~~
+exercises.c:47:6: note: declared here
+   47 | void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2, int result[]) {
+      |      ^~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+27e868a
