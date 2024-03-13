@@ -33,15 +33,9 @@ y su tamaño, y luego devuelva un nuevo arreglo que contenga solo
 los números pares del arreglo original.
 */
 int *filterEvenNumbers(int arr[], int size, int *newSize) {
-  for(int i = 0; i < size; i++)
-    if(arr[i] % 2 == 0)
-      *newSize += 1;
-  int *result = (int*) malloc(*newSize * sizeof(int));
-  int j = 0;
-  for(int i = 0; i < size; i++)
-    if(arr[i] % 2 == 0)
-      result[j++] = arr[i];
-  return result;
+  
+  return NULL;
+  
 }
 
 /*
@@ -51,7 +45,15 @@ ordenados y sus tamaños, y luego fusione estos dos
 arreglos en un tercer arreglo también ordenado.
 */
 void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
-                       int result[]) {}
+                       int result[]) {
+  int nuevo[];
+  for (int i = 0; i< size1 ; i++)
+    nuevo[i] = arr1[i];
+
+  for(int i = 0; i< size2 ; i++)
+    nuevo[size1 +1] = arr2[i];
+
+  return nuevo;  }
 
 /*
 Ejercicio 5: Comprobación de Ordenación
