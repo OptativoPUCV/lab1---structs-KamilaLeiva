@@ -52,9 +52,9 @@ void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2, int result[
   for(i = 0; i < size2 ; i++)
       result[size1 + i] = arr2[i];
 
-  int max = result[i];
-  if(result[i+1] < max)
-    max = result[i+1];
+  int min = result[i];
+  if(result[i+1] < min)
+    min = result[i+1];
 }
 
 /*
