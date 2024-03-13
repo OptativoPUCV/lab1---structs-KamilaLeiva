@@ -42,10 +42,7 @@ int *filterEvenNumbers(int arr[], int size, int *newSize) {
     if(arr[i] % 2 == 0)
       result[j++] = arr[i];
   return result;
-  
-
-  
-  return NULL; }
+}
 
 /*
 Ejercicio 4: Fusión de dos Arreglos Ordenados
