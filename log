@@ -185,3 +185,20 @@ exercises.c:47:6: note: declared here
 cc1: all warnings being treated as errors
 Compilation failed
 fda95b5
+Wed 13 Mar 2024 09:02:23 PM UTC: 
+ exercises.c | 1 -
+ 1 file changed, 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:56:10: error: ‘return’ with a value, in function returning void [-Werror=return-type]
+   56 |   return result;  }
+      |          ^~~~~~
+exercises.c:47:6: note: declared here
+   47 | void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2, int result[]) {
+      |      ^~~~~~~~~~~~~~~~~
+exercises.c:48:7: error: unused variable ‘size3’ [-Werror=unused-variable]
+   48 |   int size3 = size1 + size2;
+      |       ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+ca50e81
