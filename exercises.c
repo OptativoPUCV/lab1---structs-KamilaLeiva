@@ -55,8 +55,6 @@ void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2, int result[
   int max = result[i];
   if(result[i+1] < max)
     max = result[i+1];
-
-  return result;
 }
 
 /*
