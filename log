@@ -72,3 +72,9 @@ exercises.c:36:7: error: array size missing in ‘arreglo’
       |       ^~~~~~~
 Compilation failed
 7185f59
+Wed 13 Mar 2024 08:50:54 PM UTC: 
+ exercises.c | 12 +++++++++---
+ 1 file changed, 9 insertions(+), 3 deletions(-)
+ tests:  0|6
+total_score: 10/70
+c060dfc
