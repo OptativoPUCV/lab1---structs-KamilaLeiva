@@ -45,10 +45,11 @@ ordenados y sus tamaños, y luego fusione estos dos
 arreglos en un tercer arreglo también ordenado.
 */
 void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2, int result[]) {
-  for (int i = 0; i < size1 ; i++)
+  int i = 0;
+  for (i = 0; i < size1 ; i++)
       result[i] = arr1[i];
 
-  for(int i = 0; i < size2 ; i++)
+  for(i = 0; i < size2 ; i++)
       result[size1 + i] = arr2[i];
 
   int max = result[i];
