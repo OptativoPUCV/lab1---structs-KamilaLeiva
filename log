@@ -557,3 +557,9 @@ exercises.c:73:7: error: variable ‘min’ set but not used [-Werror=unused-but
 cc1: all warnings being treated as errors
 Compilation failed
 656e733
+Thu 14 Mar 2024 09:27:11 PM UTC: 
+ exercises.c | 9 ++++-----
+ 1 file changed, 4 insertions(+), 5 deletions(-)
+ tests:  0|3
+total_score: 40/70
+bf0acc3
