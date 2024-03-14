@@ -32,14 +32,13 @@ y su tamaño, y luego devuelva un nuevo arreglo que contenga solo
 los números pares del arreglo original.
 */
 int *filterEvenNumbers(int arr[], int size, int *newSize) {
-  int *evenArr = (int *)malloc(size * sizeof(int));
+  int *filtro = (int *)malloc(size * sizeof(int));
   int count = 0;
   for (int i = 0; i < size; i++)
     if (arr[i] % 2 == 0)
-      evenArr[count++] = arr[i];
+      filtro[count++] = arr[i];
   *newSize = count;
-  return evenArr;
-  
+  return filtro;
 }
 
 /*
@@ -49,12 +48,8 @@ ordenados y sus tamaños, y luego fusione estos dos
 arreglos en un tercer arreglo también ordenado.
 */
 void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2, int result[]) {
-  int i = 0;
-  for (i = 0; i < size1 ; i++)
-      result[i] = arr1[i];
-
-  for(i = 0; i < size2 ; i++)
-      result[size1 + i] = arr2[i];
+  
+  
 }
 
 /*
