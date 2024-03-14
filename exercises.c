@@ -123,9 +123,5 @@ typedef struct nodo {
 } Nodo;
 
 Nodo *crearListaEnlazada(int arr[], int size) {
-  Nodo *cabeza = NULL;
-  Nodo *ultimo = NULL;
-  for (int i = 0; i < size; i++)
-    
     
   return NULL; }
