@@ -751,3 +751,13 @@ Thu 14 Mar 2024 09:42:56 PM UTC:
  tests:  0|2
 total_score: 50/70
 01bbb43
+Thu 14 Mar 2024 09:43:03 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘checkSorted’:
+exercises.c:79:3: error: ‘else’ without a previous ‘if’
+   79 |   else return 0;
+      |   ^~~~
+Compilation failed
+596652d
