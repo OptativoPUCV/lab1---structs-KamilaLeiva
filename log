@@ -420,3 +420,18 @@ exercises.c:29:9: note: each undeclared identifier is reported only once for eac
 cc1: all warnings being treated as errors
 Compilation failed
 78070b4
+Thu 14 Mar 2024 09:13:39 PM UTC: 
+ exercises.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘reverseArray’:
+exercises.c:28:16: error: ‘i’ undeclared (first use in this function)
+   28 |     temp = arr[i];
+      |                ^
+exercises.c:28:16: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c: At top level:
+exercises.c:32:1: error: expected identifier or ‘(’ before ‘}’ token
+   32 | }
+      | ^
+Compilation failed
+d0e6440
