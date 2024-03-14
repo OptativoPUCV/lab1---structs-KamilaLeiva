@@ -402,3 +402,21 @@ exercises.c:29:9: note: each undeclared identifier is reported only once for eac
 cc1: all warnings being treated as errors
 Compilation failed
 037c7d7
+Thu 14 Mar 2024 09:12:44 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘reverseArray’:
+exercises.c:27:3: error: this ‘for’ clause does not guard... [-Werror=misleading-indentation]
+   27 |   for(int i = 0; i < size / 2; i++)
+      |   ^~~
+exercises.c:29:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘for’
+   29 |     arr[i] = arr[size - i - 1];
+      |     ^~~
+exercises.c:29:9: error: ‘i’ undeclared (first use in this function)
+   29 |     arr[i] = arr[size - i - 1];
+      |         ^
+exercises.c:29:9: note: each undeclared identifier is reported only once for each function it appears in
+cc1: all warnings being treated as errors
+Compilation failed
+78070b4
