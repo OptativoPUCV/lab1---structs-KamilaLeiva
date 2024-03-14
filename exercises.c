@@ -72,8 +72,10 @@ y luego devuelva 1 si el arreglo está ordenado en orden ascendente,
 int checkSorted(int arr[], int size) { 
   for (int i = 1; i < size; i++)
     if (arr[i] < arr[i - 1])
-      return 0;
-  return 1;
+      return 1;
+    else if (arr[i] > arr[i - 1])
+      return -1;
+  return 0;
   
 }
 
@@ -102,7 +104,7 @@ void inicializarLibro(Libro *libro, const char *titulo, const char *nombreAutor,
   strcpy(libro->autor.nombre, nombreAutor);
   libro->autor.anioNacimiento = anioNacimiento;
   libro->anioPublicacion = anioPublicacion;
-                      }
+}
 
 /*
 Ejercicio 7: Lista enlazada de números
@@ -120,4 +122,10 @@ typedef struct nodo {
   struct nodo *siguiente; // puntero al siguiente nodo
 } Nodo;
 
-Nodo *crearListaEnlazada(int arr[], int size) { return NULL; }
+Nodo *crearListaEnlazada(int arr[], int size) {
+  Nodo *cabeza = NULL;
+  Nodo *ultimo = NULL;
+  for (int i = 0; i < size; i++)
+    
+    
+  return NULL; }
