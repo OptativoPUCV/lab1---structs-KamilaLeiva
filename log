@@ -546,3 +546,14 @@ exercises.c:73:7: error: variable ‘min’ set but not used [-Werror=unused-but
 cc1: all warnings being treated as errors
 Compilation failed
 2563067
+Thu 14 Mar 2024 09:26:32 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘checkSorted’:
+exercises.c:73:7: error: variable ‘min’ set but not used [-Werror=unused-but-set-variable]
+   73 |   int min = arr[0];
+      |       ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+656e733
